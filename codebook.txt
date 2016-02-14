@@ -1,0 +1,196 @@
+Tidy Averaged Subset of Data on "Human Activity Recognition Using
+Smartphones Data Set"
+
+Description:
+
+     This is a tidy subset of data acquired from the UCI ML Dataset on
+     "Human Activity Recognition Using Smartphones Data Set" (see
+     citation below).
+
+     See details for processing steps.
+
+Usage:
+
+     data("normalizedAveragedData")
+     
+Format:
+
+     A data frame with 180 observations on the following 68 variables.
+
+     ‘Activity’ a character vector
+
+     ‘Subject’ a numeric vector
+
+     ‘timeBodyAccelAvgX’ a numeric vector
+
+     ‘timeBodyAccelAvgY’ a numeric vector
+
+     ‘timeBodyAccelAvgZ’ a numeric vector
+
+     ‘timeGravityAccelAvgX’ a numeric vector
+
+     ‘timeGravityAccelAvgY’ a numeric vector
+
+     ‘timeGravityAccelAvgZ’ a numeric vector
+
+     ‘timeBodyAccelJerkAvgX’ a numeric vector
+
+     ‘timeBodyAccelJerkAvgY’ a numeric vector
+
+     ‘timeBodyAccelJerkAvgZ’ a numeric vector
+
+     ‘timeBodyGyroAvgX’ a numeric vector
+
+     ‘timeBodyGyroAvgY’ a numeric vector
+
+     ‘timeBodyGyroAvgZ’ a numeric vector
+
+     ‘timeBodyGyroJerkAvgX’ a numeric vector
+
+     ‘timeBodyGyroJerkAvgY’ a numeric vector
+
+     ‘timeBodyGyroJerkAvgZ’ a numeric vector
+
+     ‘timeBodyAccelMagAvg’ a numeric vector
+
+     ‘timeGravityAccelMagAvg’ a numeric vector
+
+     ‘timeBodyAccelJerkMagAvg’ a numeric vector
+
+     ‘timeBodyGyroMagAvg’ a numeric vector
+
+     ‘timeBodyGyroJerkMagAvg’ a numeric vector
+
+     ‘freqBodyAccelAvgX’ a numeric vector
+
+     ‘freqBodyAccelAvgY’ a numeric vector
+
+     ‘freqBodyAccelAvgZ’ a numeric vector
+
+     ‘freqBodyAccelJerkAvgX’ a numeric vector
+
+     ‘freqBodyAccelJerkAvgY’ a numeric vector
+
+     ‘freqBodyAccelJerkAvgZ’ a numeric vector
+
+     ‘freqBodyGyroAvgX’ a numeric vector
+
+     ‘freqBodyGyroAvgY’ a numeric vector
+
+     ‘freqBodyGyroAvgZ’ a numeric vector
+
+     ‘freqBodyAccelMagAvg’ a numeric vector
+
+     ‘freqBodyBodyAccelJerkMagAvg’ a numeric vector
+
+     ‘freqBodyBodyGyroMagAvg’ a numeric vector
+
+     ‘freqBodyBodyGyroJerkMagAvg’ a numeric vector
+
+     ‘timeBodyAccelStdDevX’ a numeric vector
+
+     ‘timeBodyAccelStdDevY’ a numeric vector
+
+     ‘timeBodyAccelStdDevZ’ a numeric vector
+
+     ‘timeGravityAccelStdDevX’ a numeric vector
+
+     ‘timeGravityAccelStdDevY’ a numeric vector
+
+     ‘timeGravityAccelStdDevZ’ a numeric vector
+
+     ‘timeBodyAccelJerkStdDevX’ a numeric vector
+
+     ‘timeBodyAccelJerkStdDevY’ a numeric vector
+
+     ‘timeBodyAccelJerkStdDevZ’ a numeric vector
+
+     ‘timeBodyGyroStdDevX’ a numeric vector
+
+     ‘timeBodyGyroStdDevY’ a numeric vector
+
+     ‘timeBodyGyroStdDevZ’ a numeric vector
+
+     ‘timeBodyGyroJerkStdDevX’ a numeric vector
+
+     ‘timeBodyGyroJerkStdDevY’ a numeric vector
+
+     ‘timeBodyGyroJerkStdDevZ’ a numeric vector
+
+     ‘timeBodyAccelMagStdDev’ a numeric vector
+
+     ‘timeGravityAccelMagStdDev’ a numeric vector
+
+     ‘timeBodyAccelJerkMagStdDev’ a numeric vector
+
+     ‘timeBodyGyroMagStdDev’ a numeric vector
+
+     ‘timeBodyGyroJerkMagStdDev’ a numeric vector
+
+     ‘freqBodyAccelStdDevX’ a numeric vector
+
+     ‘freqBodyAccelStdDevY’ a numeric vector
+
+     ‘freqBodyAccelStdDevZ’ a numeric vector
+
+     ‘freqBodyAccelJerkStdDevX’ a numeric vector
+
+     ‘freqBodyAccelJerkStdDevY’ a numeric vector
+
+     ‘freqBodyAccelJerkStdDevZ’ a numeric vector
+
+     ‘freqBodyGyroStdDevX’ a numeric vector
+
+     ‘freqBodyGyroStdDevY’ a numeric vector
+
+     ‘freqBodyGyroStdDevZ’ a numeric vector
+
+     ‘freqBodyAccelMagStdDev’ a numeric vector
+
+     ‘freqBodyBodyAccelJerkMagStdDev’ a numeric vector
+
+     ‘freqBodyBodyGyroMagStdDev’ a numeric vector
+
+     ‘freqBodyBodyGyroJerkMagStdDev’ a numeric vector
+
+Details:
+
+     The data originally submitted to the UCI ML Dataset on "Human
+     Activity Recognition Using Smartphones Data Set" has 10299 rows of
+     561 columns, along with other data, split into training and rest
+     data. The data was acquired from 30 participants going through 6
+     activities wearing a smartphone, and accelerometer and gyroscopic
+     information was captured for this dataset.
+
+     In this data set, the training and test data were merged, after
+     adding activity (code) and subject ids. From this merged data,
+     only features (columns) relate to computed means and standard
+     deviations were extracted. This resulted in 68 columns of data.
+     The activity codes were converted to explicit activity names, and
+     the feature names made slightly more readable. The data was grouped
+     by subject id and activity name, and for each subject-id-activity
+     combination, the average was computed for each column. The data
+     was then written out as a text file.
+
+     Since there are 30 subjects and 6 activities for each subject, the
+     resulting file has 180 (= 30 * 6) rows and 68 columns.
+
+     See
+     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+     for additional information.
+
+Source:
+
+     Subset of data acquired from the UCI ML Dataset on "Human Activity
+     Recognition Using Smartphones Data Set"
+
+     Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and
+     Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity
+     Recognition Using Smartphones. 21th European Symposium on
+     Artificial Neural Networks, Computational Intelligence and Machine
+     Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
+
+Examples:
+
+     data(normalizedAveragedData)
+     
